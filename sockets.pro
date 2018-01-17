@@ -1,10 +1,12 @@
 TEMPLATE = app
-CONFIG += console c++14
+CONFIG += console c++17
 CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    application.cpp
+    application.cpp \
+    protocalfams.cpp
 
 HEADERS += \
-    application.h
+    application.h \
+    protocalfams.h

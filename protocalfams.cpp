@@ -1,9 +1,5 @@
 #include "protocalfams.h"
 
-ProtocalFams::ProtocalFams()
-{
-
-}
 
 int ProtocalFams::values[protocols_count] = {
     PF_UNSPEC	,

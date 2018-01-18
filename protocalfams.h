@@ -10,9 +10,6 @@ public:
     static const int protocols_count = 48;
     static int values[protocols_count];
     static const char* names[protocols_count];
-
-public:
-    ProtocalFams();
 };
 
 #endif // PROTOCALFAMS_H

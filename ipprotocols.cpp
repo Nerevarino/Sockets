@@ -1,0 +1,58 @@
+#include "ipprotocols.h"
+
+
+int IpProtocols::values[protocols_count] = {
+    IPPROTO_IP,
+    IPPROTO_ICMP,
+    IPPROTO_IGMP,
+    IPPROTO_IPIP,
+    IPPROTO_TCP,
+    IPPROTO_EGP,
+    IPPROTO_PUP,
+    IPPROTO_UDP,
+    IPPROTO_IDP,
+    IPPROTO_TP,
+    IPPROTO_DCCP,
+    IPPROTO_IPV6,
+    IPPROTO_RSVP,
+    IPPROTO_GRE,
+    IPPROTO_ESP,
+    IPPROTO_AH,
+    IPPROTO_MTP,
+    IPPROTO_BEETPH,
+    IPPROTO_ENCAP,
+    IPPROTO_PIM,
+    IPPROTO_COMP,
+    IPPROTO_SCTP,
+    IPPROTO_UDPLITE,
+    IPPROTO_MPLS,
+    IPPROTO_RAW
+};
+
+const char* IpProtocols::names[protocols_count] = {
+    "IPPROTO_IP",
+    "IPPROTO_ICMP",
+    "IPPROTO_IGMP",
+    "IPPROTO_IPIP",
+    "IPPROTO_TCP",
+    "IPPROTO_EGP",
+    "IPPROTO_PUP",
+    "IPPROTO_UDP",
+    "IPPROTO_IDP",
+    "IPPROTO_TP",
+    "IPPROTO_DCCP",
+    "IPPROTO_IPV6",
+    "IPPROTO_RSVP",
+    "IPPROTO_GRE",
+    "IPPROTO_ESP",
+    "IPPROTO_AH",
+    "IPPROTO_MTP",
+    "IPPROTO_BEETPH",
+    "IPPROTO_ENCAP",
+    "IPPROTO_PIM",
+    "IPPROTO_COMP",
+    "IPPROTO_SCTP",
+    "IPPROTO_UDPLITE",
+    "IPPROTO_MPLS",
+    "IPPROTO_RAW"
+};

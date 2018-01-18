@@ -5,8 +5,12 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     application.cpp \
-    protocalfams.cpp
+    protocalfams.cpp \
+    socktypes.cpp \
+    ipprotocols.cpp
 
 HEADERS += \
     application.h \
-    protocalfams.h
+    protocalfams.h \
+    socktypes.h \
+    ipprotocols.h

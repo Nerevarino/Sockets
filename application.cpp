@@ -8,18 +8,18 @@
 
 void Application::checksock(int pf_pos, int st_pos, int pt_pos)
 {
-    sockfd = socket(ProtocalFams::values[pf_pos], SockTypes::values[st_pos], IpProtocols::values[pt_pos]);
-    if (sockfd == empty_socket) {
+//    sockfd = socket(ProtocolFamilies::values[pf_pos], SockTypes::values[st_pos], IpProtocols::values[pt_pos]);
+//    if (sockfd == empty_socket) {
 
-    } else {
-        otext +=
-                string(ProtocalFams::names[pf_pos]) + string(" ") +
-                string(SockTypes::names[st_pos]) + string(" ") +
-                string(IpProtocols::names[pt_pos]) + string("\n")
-        ;
-        close(sockfd);
-        sockfd = empty_socket;
-    }
+//    } else {
+//        otext +=
+//                string(ProtocolFamilies::names[pf_pos]) + string(" ") +
+//                string(SockTypes::names[st_pos]) + string(" ") +
+//                string(IpProtocols::names[pt_pos]) + string("\n")
+//        ;
+//        close(sockfd);
+//        sockfd = empty_socket;
+//    }
 }
 
 
@@ -44,16 +44,17 @@ void
 Application::run()
 {
 
-    for (int i=0; i < ProtocalFams::protocols_count; i++) {
-        for (int j=0; j < SockTypes::types_count; j++) {
-            for (int k=0; k < IpProtocols::protocols_count; k++) {
-                    checksock(i, j, k);
-            }
-        }
-    }
-    output.open("output.txt");
-    output << otext.c_str() << endl;
-    output.close();
+//    for (int i=0; i < ProtocalFams::protocols_count; i++) {
+//        for (int j=0; j < SockTypes::types_count; j++) {
+//            for (int k=0; k < IpProtocols::protocols_count; k++) {
+//                    checksock(i, j, k);
+//            }
+//        }
+//    }
+//    output.open("ProtocolFamilies.sql");
+//    output << Table<48, ::toDB().c_str();
+//    output.close();
+//    cout << otext << endl;
     cout << "Work finished!" << endl;
 }
 

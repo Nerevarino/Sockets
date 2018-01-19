@@ -1,7 +1,7 @@
 #include "ipprotocols.h"
 
-
-int IpProtocols::values[protocols_count] = {
+template<>
+const int IpProtocols::values[] = {
     IPPROTO_IP,
     IPPROTO_ICMP,
     IPPROTO_IGMP,
@@ -29,7 +29,8 @@ int IpProtocols::values[protocols_count] = {
     IPPROTO_RAW
 };
 
-const char* IpProtocols::names[protocols_count] = {
+template<>
+const char* IpProtocols::names[] = {
     "IPPROTO_IP",
     "IPPROTO_ICMP",
     "IPPROTO_IGMP",

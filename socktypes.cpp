@@ -1,7 +1,7 @@
 #include "socktypes.h"
 
-
-int SockTypes::values[types_count] = {
+template<>
+const int SocketTypes::values[] = {
     SOCK_STREAM,
     SOCK_DGRAM,
     SOCK_RAW,
@@ -13,7 +13,8 @@ int SockTypes::values[types_count] = {
     SOCK_NONBLOCK
 };
 
-const char* SockTypes::names[types_count] = {
+template<>
+const char* SocketTypes::names[] = {
     "SOCK_STREAM",
     "SOCK_DGRAM",
     "SOCK_RAW",

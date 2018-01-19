@@ -1,5 +1,5 @@
 TEMPLATE = app
-CONFIG += console c++17
+CONFIG += console c++14
 CONFIG -= app_bundle
 CONFIG -= qt
 
@@ -13,4 +13,5 @@ HEADERS += \
     application.h \
     protocalfams.h \
     socktypes.h \
-    ipprotocols.h
+    ipprotocols.h \
+    table.h

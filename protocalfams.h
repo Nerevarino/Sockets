@@ -1,15 +1,10 @@
 #ifndef PROTOCALFAMS_H
 #define PROTOCALFAMS_H
 
-#include <sys/socket.h>
+#include "table.h"
 
+constexpr char fams_classname[] = "ProtocolFamilies";
 
-class ProtocalFams
-{
-public:
-    static const int protocols_count = 48;
-    static int values[protocols_count];
-    static const char* names[protocols_count];
-};
+using ProtocolFamilies = Table<48, fams_classname>;
 
 #endif // PROTOCALFAMS_H

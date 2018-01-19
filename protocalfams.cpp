@@ -1,7 +1,7 @@
 #include "protocalfams.h"
 
-
-int ProtocalFams::values[protocols_count] = {
+template<>
+const int ProtocolFamilies::values[ProtocolFamilies::count] = {
     PF_UNSPEC	,
     PF_LOCAL	,
     PF_UNIX		,
@@ -53,7 +53,8 @@ int ProtocalFams::values[protocols_count] = {
 };
 
 // grep -o '#define PF_[A-Z0-9a-z]\+[[:blank:]]\+' /usr/include/bits/socket.h | sed 's~#define ~~g' | sed 's/[[:blank:]]\+//' | sed 's/.*/"&",/'
-const char* ProtocalFams::names[protocols_count] = {
+template<>
+const char* ProtocolFamilies::names[ProtocolFamilies::count] = {
     "PF_UNSPEC",
     "PF_LOCAL",
     "PF_UNIX",
@@ -103,3 +104,4 @@ const char* ProtocalFams::names[protocols_count] = {
     "PF_SMC",
     "PF_MAX"
 };
+

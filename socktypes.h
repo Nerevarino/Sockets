@@ -1,15 +1,10 @@
 #ifndef SOCKTYPES_H
 #define SOCKTYPES_H
 
-#include <sys/socket.h>
+#include "table.h"
 
+constexpr char sock_classname[] = "SocketTypes";
 
-class SockTypes
-{
-public:
-    static const int types_count = 9;
-    static int values[types_count];
-    static const char* names[types_count];
-};
+using SocketTypes = Table<9, sock_classname>;
 
 #endif // SOCKTYPES_H

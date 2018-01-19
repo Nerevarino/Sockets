@@ -3,12 +3,10 @@
 
 #include <netinet/in.h>
 
-class IpProtocols
-{
-public:
-    static const int protocols_count = 25;
-    static int values[protocols_count];
-    static const char* names[protocols_count];
-};
+#include "table.h"
+
+constexpr char proto_classname[] = "IpProtocols";
+
+using IpProtocols = Table<25, proto_classname>;
 
 #endif // IPPROTOCOLS_H
